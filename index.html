@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>나라장터</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
+	<link href="/css/kang2oon.reset.min.css" rel="stylesheet">
+	<link href="/css/nice-select.css" rel="stylesheet">
+	<link href="/css/datepicker.min.css" rel="stylesheet">
+	<link href="/css/icheck-blue.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="header" class="container-fluid clearfix">
+	<h1><span>INKIUM</span>나라장터 공고조회 서비스</h1>
+	<div class="member">홍길동님 <button type="button">마이페이지</button> <button type="button">로그아웃</button></div>
+</div>
+<div id="main" class="container-fluid">
+	<div class="container">
+		<h2>나라장터 공고 검색</h2>
+		<div class="search-wrap">
+			<div class="clearfix">
+				<div class="box-tit">
+					<select class="wide">
+						<option value="1">입찰공고일</option>
+						<option value="2">제출마감일</option>
+					</select>
+				</div>
+				<div class="box-cont">
+					<input type="text" class="date-pick"/> ~ <input type="text" class="date-pick"/>
+					<button type="button">오늘</button> <button type="button">최근 7일</button> <button type="button">최근 15일</button> <button type="button">최근 30일</button>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="box-tit">
+					<select class="wide">
+						<option value="1">공고기관명</option>
+						<option value="2">수요기관명</option>
+						<option value="3">낙찰업체명</option>
+						<option value="4">계약업체명</option>
+					</select>
+				</div>
+				<div class="box-cont">
+					<input type="text" class="half" />
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="box-tit txt-only">
+					개칠진행현황
+				</div>
+				<div class="box-cont">
+					<label><input type="checkbox" /> 전체</label> <label><input type="checkbox" checked="checked"/> 개찰 전(공고 중)</label> <label><input type="checkbox" /> 개찰 완료</label> <label><input type="checkbox" /> 유찰</label> <label><input type="checkbox" /> 재입찰</label> <label><input type="checkbox" /> 낙찰 완료</label> <label><input type="checkbox" /> 계약 완료</label>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="box-tit txt-only">
+					업무구분
+				</div>
+				<div class="box-cont">
+					<label><input type="checkbox" /> 전체</label> <label><input type="checkbox" /> 물품</label> <label><input type="checkbox" /> 용역</label> <label><input type="checkbox" /> 공사</label> <label><input type="checkbox" /> 외자</label>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="box-tit">
+					<select class="wide">
+						<option value="1">공고명</option>
+						<option value="2">수요기관명</option>
+						<option value="3">낙찰업체명</option>
+						<option value="4">계약업체명</option>
+					</select>
+				</div>
+				<div class="box-cont">
+					<input type="text" class="wide" />
+				</div>
+			</div>
+			<hr/>
+			<div class="center">
+				<input type="submit" value="검색" />
+			</div>
+		</div>
+		<div class="anno-list-wrap">
+			<div class="clearfix">
+				<div class="fleft">총 <span class="accent">000</span>개의 공고가 검색되었습니다.</div>
+				<div class="fright clearfix">
+					<div class="fleft sort"><a href="javascript:void(0)" class="active">입찰공고 최신순</a> &middot; <a href="javascript:void(0)">제출일자 마감순</a></div>
+					<div class="fleft list-cnt-set">
+						<select class="right">
+							<option value="1">10개씩</option>
+							<option value="2">25개씩</option>
+							<option value="3">50개씩</option>
+							<option value="4">100개씩</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<table>
+				<thead>
+				<tr>
+					<th rowspan="2"><input type="checkbox" /></th>
+					<th>공고번호(업무구분)</th>
+					<th>공고기관</th>
+					<th>공고일자</th>
+					<th>개찰일자</th>
+					<th>진행현황</th>
+					<th>공고URL</th>
+				</tr>
+				<tr>
+					<th>공고명</th>
+					<th>수요기관</th>
+					<th>마감일자</th>
+					<th>배정예산(원)</th>
+					<th>참여업체수</th>
+					<th>공유하기</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td rowspan="2"><input type="checkbox" /></td>
+					<td><span class="scope service">용역</span> 20191205740-00</td>
+					<td>재단법인경기도일자리재단</td>
+					<td>2019-12-04</td>
+					<td>2019-12-18</td>
+					<td>계약완료</td>
+					<td><input type="button" class="url-go" value="바로가기" /></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0)">2020년 일자리플랫폼 잡아바 서비스 운영 용역</a></td>
+					<td>재단법인경기도일자리재단</td>
+					<td>2019-12-17</td>
+					<td>1,280,000,000</td>
+					<td>5</td>
+					<td><input type="button" class="share mail" title="메일" value="메일" /><input type="button" class="share sms" value="SMS" title="SMS" /><input type="button" class="share kakao" title="카카오톡" value="카카오톡" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td rowspan="2"><input type="checkbox" /></td>
+					<td><span class="scope product">물품</span> 20191220800-00</td>
+					<td>조달청</td>
+					<td>2012-01-21</td>
+					<td>2012-01-22</td>
+					<td>개찰 전</td>
+					<td><input type="button" class="url-go" value="바로가기" /></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0)">19년 차세대 개발환경 구축 상용  SW 도입(DB암호화) 및 구축</a></td>
+					<td>조달청</td>
+					<td>2012-01-22</td>
+					<td>360,000,000</td>
+					<td>3</td>
+					<td><input type="button" class="share mail" title="메일" value="메일" /><input type="button" class="share sms" value="SMS" title="SMS" /><input type="button" class="share kakao" title="카카오톡" value="카카오톡" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td rowspan="2"><input type="checkbox" /></td>
+					<td><span class="scope constru">공사</span> 20191205740-00</td>
+					<td>재단법인경기도일자리재단</td>
+					<td>2019-12-04</td>
+					<td>2019-12-18</td>
+					<td>계약완료</td>
+					<td><input type="button" class="url-go" value="바로가기" /></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0)">2020년 일자리플랫폼 잡아바 서비스 운영 용역</a></td>
+					<td>재단법인경기도일자리재단</td>
+					<td>2019-12-17</td>
+					<td>1,280,000,000</td>
+					<td>5</td>
+					<td><input type="button" class="share mail" title="메일" value="메일" /><input type="button" class="share sms" value="SMS" title="SMS" /><input type="button" class="share kakao" title="카카오톡" value="카카오톡" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td rowspan="2"><input type="checkbox" /></td>
+					<td><span class="scope capital">외자</span> 20191220800-00</td>
+					<td>조달청</td>
+					<td>2012-01-21</td>
+					<td>2012-01-22</td>
+					<td>개찰 전</td>
+					<td><input type="button" class="url-go" value="바로가기" /></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0)">19년 차세대 개발환경 구축 상용  SW 도입(DB암호화) 및 구축</a></td>
+					<td>조달청</td>
+					<td>2012-01-22</td>
+					<td>360,000,000</td>
+					<td>3</td>
+					<td><input type="button" class="share mail" title="메일" value="메일" /><input type="button" class="share sms" value="SMS" title="SMS" /><input type="button" class="share kakao" title="카카오톡" value="카카오톡" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td rowspan="2"><input type="checkbox" /></td>
+					<td><span class="scope service">용역</span> 20191205740-00</td>
+					<td>재단법인경기도일자리재단</td>
+					<td>2019-12-04</td>
+					<td>2019-12-18</td>
+					<td>계약완료</td>
+					<td><input type="button" class="url-go" value="바로가기" /></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0)">2020년 일자리플랫폼 잡아바 서비스 운영 용역</a></td>
+					<td>재단법인경기도일자리재단</td>
+					<td>2019-12-17</td>
+					<td>1,280,000,000</td>
+					<td>5</td>
+					<td><input type="button" class="share mail" title="메일" value="메일" /><input type="button" class="share sms" value="SMS" title="SMS" /><input type="button" class="share kakao" title="카카오톡" value="카카오톡" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td rowspan="2"><input type="checkbox" /></td>
+					<td><span class="scope product">물품</span> 20191220800-00</td>
+					<td>조달청</td>
+					<td>2012-01-21</td>
+					<td>2012-01-22</td>
+					<td>개찰 전</td>
+					<td><input type="button" class="url-go" value="바로가기" /></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0)">19년 차세대 개발환경 구축 상용  SW 도입(DB암호화) 및 구축</a></td>
+					<td>조달청</td>
+					<td>2012-01-22</td>
+					<td>360,000,000</td>
+					<td>3</td>
+					<td><input type="button" class="share mail" title="메일" value="메일" /><input type="button" class="share sms" value="SMS" title="SMS" /><input type="button" class="share kakao" title="카카오톡" value="카카오톡" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td rowspan="2"><input type="checkbox" /></td>
+					<td><span class="scope constru">공사</span> 20191205740-00</td>
+					<td>재단법인경기도일자리재단</td>
+					<td>2019-12-04</td>
+					<td>2019-12-18</td>
+					<td>계약완료</td>
+					<td><input type="button" class="url-go" value="바로가기" /></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0)">2020년 일자리플랫폼 잡아바 서비스 운영 용역</a></td>
+					<td>재단법인경기도일자리재단</td>
+					<td>2019-12-17</td>
+					<td>1,280,000,000</td>
+					<td>5</td>
+					<td><input type="button" class="share mail" title="메일" value="메일" /><input type="button" class="share sms" value="SMS" title="SMS" /><input type="button" class="share kakao" title="카카오톡" value="카카오톡" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td rowspan="2"><input type="checkbox" /></td>
+					<td><span class="scope capital">외자</span> 20191220800-00</td>
+					<td>조달청</td>
+					<td>2012-01-21</td>
+					<td>2012-01-22</td>
+					<td>개찰 전</td>
+					<td><input type="button" class="url-go" value="바로가기" /></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0)">19년 차세대 개발환경 구축 상용  SW 도입(DB암호화) 및 구축</a></td>
+					<td>조달청</td>
+					<td>2012-01-22</td>
+					<td>360,000,000</td>
+					<td>3</td>
+					<td><input type="button" class="share mail" title="메일" value="메일" /><input type="button" class="share sms" value="SMS" title="SMS" /><input type="button" class="share kakao" title="카카오톡" value="카카오톡" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td rowspan="2"><input type="checkbox" /></td>
+					<td><span class="scope service">용역</span> 20191205740-00</td>
+					<td>재단법인경기도일자리재단</td>
+					<td>2019-12-04</td>
+					<td>2019-12-18</td>
+					<td>계약완료</td>
+					<td><input type="button" class="url-go" value="바로가기" /></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0)">2020년 일자리플랫폼 잡아바 서비스 운영 용역</a></td>
+					<td>재단법인경기도일자리재단</td>
+					<td>2019-12-17</td>
+					<td>1,280,000,000</td>
+					<td>5</td>
+					<td><input type="button" class="share mail" title="메일" value="메일" /><input type="button" class="share sms" value="SMS" title="SMS" /><input type="button" class="share kakao" title="카카오톡" value="카카오톡" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td rowspan="2"><input type="checkbox" /></td>
+					<td><span class="scope product">물품</span> 20191220800-00</td>
+					<td>조달청</td>
+					<td>2012-01-21</td>
+					<td>2012-01-22</td>
+					<td>개찰 전</td>
+					<td><input type="button" class="url-go" value="바로가기" /></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0)">19년 차세대 개발환경 구축 상용  SW 도입(DB암호화) 및 구축</a></td>
+					<td>조달청</td>
+					<td>2012-01-22</td>
+					<td>360,000,000</td>
+					<td>3</td>
+					<td><input type="button" class="share mail" title="메일" value="메일" /><input type="button" class="share sms" value="SMS" title="SMS" /><input type="button" class="share kakao" title="카카오톡" value="카카오톡" /></td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="clearfix">
+				<div class="fleft seltem-act">
+					<button type="button">선택 공유하기</button> <button type="button">엑셀 저장하기</button>
+				</div>
+				<div class="fright paging">
+					<a href="javascript:void(0)" class="current">1</a>
+					<a href="javascript:void(0)">2</a>
+					<a href="javascript:void(0)">3</a>
+					<a href="javascript:void(0)">4</a>
+					<a href="javascript:void(0)">5</a>
+					<a href="javascript:void(0)">6</a>
+					<a href="javascript:void(0)">7</a>
+					<a href="javascript:void(0)">8</a>
+					<a href="javascript:void(0)">9</a>
+					<a href="javascript:void(0)">10</a>
+					<a href="javascript:void(0)" class="pn">다음</a>
+					<a href="javascript:void(0)" class="pn">마지막</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer" class="container-fluid">
+	&copy;2020 INKIUM Co, LTD. All right reserved.
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/js/jquery.nice-select.min.js"></script>
+<script src="/js/datepicker.min.js"></script>
+<script src="/js/datepicker.ko.js"></script>
+<script src="/js/icheck.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
