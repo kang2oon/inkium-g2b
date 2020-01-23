@@ -79,4 +79,7 @@ a{color:inherit;text-decoration:none}
 	.tab li a{display:block;text-align:center;padding:8px}
 	.tab li a.active{background:-webkit-linear-gradient(45deg,#303f9f,#7b1fa2);background:linear-gradient(45deg,#303f9f,#7b1fa2);color:#fff}
 	.scrollto:focus{outline:none}
+	.btn-wrap{margin:20px 0}
+	.btn-wrap button{background:rgba(0,0,0,.5);border:solid 1px #e8e8e8;border-radius:5px;font-size:14px;color:#fff;padding:0 18px;height:40px;line-height:38px}
+	.btn-wrap button+button{margin-left:5px}
 #footer{background:rgba(0,0,0,.87);color:#fff;padding:24px 18px;}
