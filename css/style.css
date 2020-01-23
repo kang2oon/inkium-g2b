@@ -15,8 +15,9 @@ a{color:inherit;text-decoration:none}
 	#header .member{float:right;margin-top:22px}
 	#header .member button{background:#ff4081;border:none;border-radius:5px;color:#fff;padding:3px 8px;margin-left:2px}
 /* Contents */
-#main{background:#f9f9f9;padding:13px 18px}
+#main{background:#f9f9f9;padding:13px 18px 30px}
 	h2{font-size:18px;margin:15px 0 5px}
+	h3{font-size:16px;margin:30px 0 5px;background:url(../images/ico-bullet.png) no-repeat 0 50%;padding-left:23px}
 	.search-wrap{background:#f0f0f0;border:1px solid #e5e5e5;padding:20px}
 	.search-wrap .clearfix{margin-bottom:10px}
 	.search-wrap .box-tit{float:left;width:15%}
@@ -38,6 +39,9 @@ a{color:inherit;text-decoration:none}
 	.anno-list-wrap .list-cnt-set{margin:-21px 0 0 10px}
 	table{width:100%;border-top:2px solid #e0e0e0;border-collapse:collapse;margin:10px 0}
 	table th, table td{padding:8px;border-left:1px solid #e0e0e0;text-align:center}
+	table.txtleft th, table.txtleft td{text-align:left;padding:8px 13px}
+	table.txtleft th{width:15%}
+	table.txtleft td{background:#fff}
 	table th:first-child, table td:first-child{border-left:none}
 	table tr{border-bottom:1px solid #e0e0e0}
 	table tbody:nth-child(even) tr{background:#fff}
@@ -49,16 +53,30 @@ a{color:inherit;text-decoration:none}
 	table span.constru{background:#4caf50}
 	table span.capital{background:#ff9800}
 	table a{text-decoration:underline dotted #666}
-	table input[type='button']{background:transparent;border:1px solid #e0e0e0;border-radius:3px;padding:2px 7px}
+	table input[type='button'], .vsh input[type='button']{background:transparent;border:1px solid #e0e0e0;border-radius:3px;padding:2px 7px}
 	table input.url-go{background:url(../images/ico-new-window.png);background-repeat:no-repeat;background-position-x:calc(100% - 7px);background-position-y:50%;padding-right:24px}
-	table input.share{background-repeat:no-repeat;background-position:50% 50%;padding:2px 5px;width:24px;text-indent:-999999px}
-	table input+input{margin-left:7px}
-	table input.mail{background-image:url(../images/ico-mail.png)}
-	table input.sms{background-image:url(../images/ico-sms.png)}
-	table input.kakao{background-image:url(../images/ico-kakao.png)}
+	table.txtleft input.url-go{background-color:#efefef}
+	table input.share, .vsh input.share{background-repeat:no-repeat;background-position:50% 50%;padding:2px 5px;width:24px;text-indent:-999999px}
+	table input+input, .vsh input+input{margin-left:7px}
+	table input.mail, .vsh input.mail{background-image:url(../images/ico-mail.png)}
+	table input.sms, .vsh input.sms{background-image:url(../images/ico-sms.png)}
+	table input.kakao, .vsh input.kakao{background-image:url(../images/ico-kakao.png)}
 	table tbody:hover tr{background:rgba(0,188,212,.1)}
+	table.txtleft tbody:hover tr{background:transparent}
+	table.rank td:nth-child(1), table.rank td:nth-child(2){text-align:center!important;}
+	table.rank td:nth-child(3){text-align:left;}
+	table.rank td:nth-child(5){text-align:right;}
 	.seltem-act button{background:rgba(0,0,0,.5);border:solid 1px #e8e8e8;border-radius:5px;font-size:13px;color:#fff;padding:0 15px;height:34px;line-height:32px}
 	.paging a{display:inline-block;border:solid 1px #e0e0e0;border-radius:5px;font-size:13px;padding:0 8px;min-width:34px;height:34px;text-align:center;line-height:32px}
 	.paging a.pn{background:#eaeaea}
 	.paging a.current{background:#ff4081;border-color:#ff4081;color:#fff;}
+	.vsh{margin-top:18px}
+	.tab{width:100%;margin:8px 0 24px}
+	.tab.sticky{margin:0;top:0;left:0}
+	.tab.unsticky .nav li:first-child a{background:-webkit-linear-gradient(45deg,#303f9f,#7b1fa2);background:linear-gradient(45deg,#303f9f,#7b1fa2);color:#fff}
+	.tab li{float:left;width:33.333333%;background:#fff;border:1px solid #e0e0e0}
+	.tab li+li{border-left:none}
+	.tab li a{display:block;text-align:center;padding:8px}
+	.tab li a.active{background:-webkit-linear-gradient(45deg,#303f9f,#7b1fa2);background:linear-gradient(45deg,#303f9f,#7b1fa2);color:#fff}
+	.scrollto:focus{outline:none}
 #footer{background:rgba(0,0,0,.87);color:#fff;padding:24px 18px;}

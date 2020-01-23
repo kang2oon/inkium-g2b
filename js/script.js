@@ -9,4 +9,5 @@ $(document).ready(function(){
 		checkboxClass: 'icheckbox_minimal-blue',
 		radioClass: 'iradio_minimal-blue'
 	});
+	$('.tab').stickyNavbar();
 });
