@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>나라장터</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
+	<link href="/css/kang2oon.reset.min.css" rel="stylesheet">
+	<link href="/css/nice-select.css" rel="stylesheet">
+	<link href="/css/datepicker.min.css" rel="stylesheet">
+	<link href="/css/icheck-blue.css" rel="stylesheet">
+	<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="header" class="container-fluid clearfix">
+	<h1><span>INKIUM</span>나라장터 공고조회 서비스</h1>
+	<div class="member">홍길동님 <button type="button">마이페이지</button> <button type="button">로그아웃</button></div>
+</div>
+<div id="main" class="container-fluid">
+	<div class="container member">
+		<div class="mem-tit-area clearfix">
+			<h2 class="fleft">회원가입</h2>
+			<div class="fright rq_guie">* 필수 입력</div>
+		</div>
+		<div class="clearfix">
+			<label for="name" class="required">이름</label>
+			<div class="input-area label-false"><input id="name" type="text" /></div>
+		</div>
+		<div class="clearfix">
+			<label for="id" class="required">아이디</label>
+			<div class="input-area label-true valid"><input id="id" type="text" placeholder="6자 이상 영문, 숫자 조합" /></div>
+		</div>
+		<div class="clearfix">
+			<label for="pw" class="required">비밀번호</label>
+			<div class="input-area label-true pw-mid"><input id="pw" type="text" placeholder="8자 이상 영문, 숫자, 특수문자 포함" /></div>
+		</div>
+		<div class="clearfix">
+			<label for="pwchk" class="required">비밀번호 확인</label>
+			<div class="input-area label-true invalid"><input id="pwchk" type="text" /></div>
+		</div>
+		<div class="clearfix">
+			<label for="cphone" class="required">휴대전화</label>
+			<div class="input-area noborder clearfix">
+				<div class="cp fleft">
+					<select class="wide">
+						<option value="1">SKT</option>
+						<option value="2">KT</option>
+						<option value="3">LG U+</option>
+						<option value="4">알뜰폰</option>
+					</select>
+				</div>
+				<div class="cp fright">
+					<input id="cphone" type="text" class="border ty1" /> -
+					<input type="text" class="border ty1" /> -
+					<input type="text" class="border ty1" />
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<label for="email" class="required">이메일</label>
+			<div class="input-area noborder clearfix">
+				<div class="em fleft">
+					<input id="email" type="text" class="border ty2" /> @
+					<input type="text" class="border ty2" />
+				</div>
+				<div class="em fright">
+					<select class="wide">
+						<option value="1">직접입력</option>
+						<option value="2">naver.com</option>
+						<option value="3">hanmail.net</option>
+						<option value="4">gmail.com</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<label for="grade">소속/직급</label>
+			<div class="input-area noborder clearfix">
+				<input id="grade" type="text" class="border ty3" placeholder="소속" />
+				<input type="text" class="border ty3" placeholder="직급" />
+			</div>
+		</div>
+		<div class="center btn-wrap">
+			<button type="button">취소</button><button type="button" class="submit">가입 완료</button>
+		</div>
+	</div>
+</div>
+<div id="footer" class="container-fluid">
+	&copy;2020 INKIUM Co, LTD. All right reserved.
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.stickyNavbar.min.js"></script>
+<script src="/js/jquery.nice-select.min.js"></script>
+<script src="/js/datepicker.min.js"></script>
+<script src="/js/datepicker.ko.js"></script>
+<script src="/js/icheck.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

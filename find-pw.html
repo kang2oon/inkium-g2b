@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>나라장터</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
+	<link href="/css/kang2oon.reset.min.css" rel="stylesheet">
+	<link href="/css/nice-select.css" rel="stylesheet">
+	<link href="/css/datepicker.min.css" rel="stylesheet">
+	<link href="/css/icheck-blue.css" rel="stylesheet">
+	<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="header" class="container-fluid clearfix">
+	<h1><span>INKIUM</span>나라장터 공고조회 서비스</h1>
+	<div class="member">홍길동님 <button type="button">마이페이지</button> <button type="button">로그아웃</button></div>
+</div>
+<div id="main" class="container-fluid">
+	<div class="container member">
+		<div class="mem-tit-area clearfix">
+			<h2 class="fleft">아이디/비밀번호 찾기</h2>
+		</div>
+		<ul class="tab-sty2 cnt2 clearfix">
+			<li><a href="javascript:void(0)">아이디 찾기</a></li>
+			<li><a href="javascript:void(0)" class="active">비밀번호 찾기</a></li>
+		</ul>
+		<div class="center">
+			<ul class="tab-sty3 clearfix">
+				<li rel="cphon" class="active">휴대폰</li>
+				<li rel="email">이메일</li>
+			</ul>
+		</div>
+		<div class="tab-container">
+			<div id="cphon" class="tab-content">
+				<div class="clearfix">
+					<label for="name">이름</label>
+					<div class="input-area label-false"><input id="name" type="text" /></div>
+				</div>
+				<div class="clearfix">
+					<label for="id">아이디</label>
+					<div class="input-area label-false"><input id="id" type="text" /></div>
+				</div>
+				<div class="clearfix">
+					<label for="cphone">휴대전화</label>
+					<div class="input-area noborder clearfix">
+						<div class="cp2 fleft">
+							<select class="wide">
+								<option value="1">010</option>
+								<option value="2">011</option>
+								<option value="3">016</option>
+								<option value="4">017</option>
+								<option value="5">018</option>
+								<option value="6">019</option>
+							</select>
+						</div>
+						<div class="fleft">
+							&nbsp;- <input id="cphone" type="text" class="border ty1" /> -
+							<input type="text" class="border ty1" />
+						</div>
+						<div class="fright">
+							<button type="button">인증번호 받기</button>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label for="auth">인증번호</label>
+					<div class="input-area label-false"><input id="auth" type="text" placeholder="인증번호를 입력하세요" /></div>
+				</div>
+			</div>
+			<div id="email" class="tab-content">
+				<div class="clearfix">
+					<label for="name2">이름</label>
+					<div class="input-area label-false"><input id="name2" type="text" /></div>
+				</div>
+				<div class="clearfix">
+					<label for="id2">아이디</label>
+					<div class="input-area label-false"><input id="id2" type="text" /></div>
+				</div>
+				<div class="clearfix">
+					<label for="email2">이메일</label>
+					<div class="input-area noborder clearfix">
+						<div class="fleft">
+							<input id="email2" type="text" class="border ty4" />
+						</div>
+						<div class="fright">
+							<button type="button">인증번호 받기</button>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label for="auth2">인증번호</label>
+					<div class="input-area label-false"><input id="auth2" type="text" placeholder="인증번호를 입력하세요" /></div>
+				</div>
+			</div>
+		</div>
+		<div class="center btn-wrap">
+			<button type="button">취소</button><button type="button" class="submit">확인</button>
+		</div>
+	</div>
+</div>
+<div id="footer" class="container-fluid">
+	&copy;2020 INKIUM Co, LTD. All right reserved.
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.stickyNavbar.min.js"></script>
+<script src="/js/jquery.nice-select.min.js"></script>
+<script src="/js/datepicker.min.js"></script>
+<script src="/js/datepicker.ko.js"></script>
+<script src="/js/icheck.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
