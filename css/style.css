@@ -52,7 +52,8 @@ a{color:inherit;text-decoration:none}
 	table tr{border-bottom:1px solid #e0e0e0}
 	table tbody:nth-child(even) tr{background:#fff}
 	table th{background:#efefef}
-	table tbody tr:nth-child(odd) td:nth-child(2), table tbody tr:nth-child(even) td:nth-child(1){text-align:left}
+	table tbody tr:nth-child(odd) td:nth-child(2), table tbody tr:nth-child(even) td:nth-child(1), table.shlist td:nth-child(1){text-align:left}
+	table.shlist td:nth-child(2){text-align:center!important}
 	table span.scope{display:inline-block;color:#fff;font-size:12px;padding:1px 5px;margin-right:3px;border-radius:3px}
 	table span.service{background:#00bcd4}
 	table span.product{background:#f44336}
