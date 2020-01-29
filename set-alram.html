@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>나라장터</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
+	<link href="/css/kang2oon.reset.min.css" rel="stylesheet">
+	<link href="/css/nice-select.css" rel="stylesheet">
+	<link href="/css/datepicker.min.css" rel="stylesheet">
+	<link href="/css/icheck-blue.css" rel="stylesheet">
+	<link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="header" class="container-fluid clearfix">
+	<h1><span>INKIUM</span>나라장터 공고조회 서비스</h1>
+	<div class="member">홍길동님 <button type="button">마이페이지</button> <button type="button">로그아웃</button></div>
+</div>
+<div id="main" class="container-fluid">
+	<div class="container">
+		<ul class="tab-sty2 cnt2 mg-guide clearfix">
+			<li><a href="javascript:void(0)">정보 수정</a></li>
+			<li><a href="javascript:void(0)" class="active">알림 설정</a></li>
+		</ul>
+	
+		<h2>알림 설정</h2>
+		<div class="search-wrap">
+			<div class="clearfix">
+				<div class="box-tit txt-only">
+					키워드
+				</div>
+				<div class="box-cont">
+					<input type="text" class="wide" />
+					<span class="guide">※ 다중 키워드 등록을 희망할 경우 콤마(,)로 구분해 주세요.</span>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="box-tit txt-only">
+					발송 매체
+				</div>
+				<div class="box-cont">
+					<label><input type="checkbox" /> 전체</label> <label><input type="checkbox"/> 이메일</label> <label><input type="checkbox" /> SMS</label> <label><input type="checkbox" /> 카카오톡</label>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="box-tit txt-only">
+					개칠진행현황
+				</div>
+				<div class="box-cont">
+					<label><input type="checkbox" /> 전체</label> <label><input type="checkbox" checked="checked"/> 개찰 전(공고 중)</label> <label><input type="checkbox" /> 개찰 완료</label> <label><input type="checkbox" /> 유찰</label> <label><input type="checkbox" /> 재입찰</label> <label><input type="checkbox" /> 낙찰 완료</label> <label><input type="checkbox" /> 계약 완료</label>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="box-tit txt-only">
+					업무구분
+				</div>
+				<div class="box-cont">
+					<label><input type="checkbox" /> 전체</label> <label><input type="checkbox" /> 물품</label> <label><input type="checkbox" /> 용역</label> <label><input type="checkbox" /> 공사</label> <label><input type="checkbox" /> 외자</label>
+				</div>
+			</div>
+			<div class="clearfix nomargin">
+				<div class="box-tit txt-only">
+					발송 주기
+				</div>
+				<div class="box-cont clearfix">
+					<div class="fleft selbox">
+						<select class="wide">
+							<option value="1">매일</option>
+							<option value="2" selected="selected">매주</option>
+						</select>
+					</div>
+					<div class="fleft selday">
+						<label><input type="radio" name="selday" /> 월</label> <label><input type="radio" name="selday" /> 화</label> <label><input type="radio" name="selday" /> 수</label> <label><input type="radio" name="selday" /> 목</label> <label><input type="radio" name="selday" /> 금</label> <label><input type="radio" name="selday" /> 토</label> <label><input type="radio" name="selday" /> 일</label>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="box-tit txt-only">
+					발송 시간
+				</div>
+				<div class="box-cont clearfix">
+					<div class="fleft selbox">
+						<select class="wide">
+							<option value="1">09:00</option>
+							<option value="2">09:30</option>
+							<option value="3">10:00</option>
+							<option value="4">10:30</option>
+							<option value="5">11:00</option>
+							<option value="6">11:30</option>
+							<option value="7">12:00</option>
+							<option value="8">12:30</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<hr/>
+			<div class="center">
+				<input type="submit" value="알림 추가" />
+			</div>
+		</div>
+		<div class="anno-list-wrap">
+			<div class="clearfix">
+				<div class="fleft">총 <span class="accent">000</span>개의 알림이 설정되어 있습니다.</div>
+				<div class="fright clearfix">
+					<div class="fleft list-cnt-set">
+						<select class="right">
+							<option value="1">10개씩</option>
+							<option value="2">25개씩</option>
+							<option value="3">50개씩</option>
+							<option value="4">100개씩</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<table>
+				<thead>
+				<tr>
+					<th><input type="checkbox" /></th>
+					<th>키워드/진행현황/업무구분</th>
+					<th>발송주기</th>
+					<th>삭제</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td><span class="scope service">용역</span> <strong>일자리, 교육운영</strong> <span class="ico mail">메일</span><span class="ico sms">SMS</span><span class="ico kakao">카카오톡</span><br/>개찰 전(공고 전), 유찰, 재입찰</td>
+					<td>매일(월,화,수,목,금,휴일제외)<br/>10:00</td>
+					<td><input type="button" class="share trash" value="삭제" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td><span class="scope service">용역</span> <strong>일자리, 교육운영</strong> <span class="ico mail">메일</span><span class="ico sms">SMS</span><span class="ico kakao">카카오톡</span><br/>개찰 전(공고 전), 유찰, 재입찰</td>
+					<td>매주(수)<br/>10:00</td>
+					<td><input type="button" class="share trash" value="삭제" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td><span class="scope constru">공사</span> <strong>일자리, 교육운영</strong> <span class="ico mail">메일</span><span class="ico sms">SMS</span><span class="ico kakao">카카오톡</span><br/>개찰 전(공고 전), 유찰, 재입찰</td>
+					<td>매일(월,화,수,목,금,휴일제외)<br/>10:00</td>
+					<td><input type="button" class="share trash" value="삭제" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td><span class="scope service">용역</span> <strong>일자리, 교육운영</strong> <span class="ico mail">메일</span><span class="ico sms">SMS</span><span class="ico kakao">카카오톡</span><br/>개찰 전(공고 전), 유찰, 재입찰</td>
+					<td>매주(수)<br/>10:00</td>
+					<td><input type="button" class="share trash" value="삭제" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td><span class="scope product">물품</span> <strong>일자리, 교육운영</strong> <span class="ico mail">메일</span><span class="ico sms">SMS</span><span class="ico kakao">카카오톡</span><br/>개찰 전(공고 전), 유찰, 재입찰</td>
+					<td>매일(월,화,수,목,금,휴일제외)<br/>10:00</td>
+					<td><input type="button" class="share trash" value="삭제" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td><span class="scope service">용역</span> <strong>일자리, 교육운영</strong> <span class="ico mail">메일</span><span class="ico sms">SMS</span><span class="ico kakao">카카오톡</span><br/>개찰 전(공고 전), 유찰, 재입찰</td>
+					<td>매주(수)<br/>10:00</td>
+					<td><input type="button" class="share trash" value="삭제" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td><span class="scope capital">외자</span> <strong>일자리, 교육운영</strong> <span class="ico mail">메일</span><span class="ico sms">SMS</span><span class="ico kakao">카카오톡</span><br/>개찰 전(공고 전), 유찰, 재입찰</td>
+					<td>매일(월,화,수,목,금,휴일제외)<br/>10:00</td>
+					<td><input type="button" class="share trash" value="삭제" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td><span class="scope service">용역</span> <strong>일자리, 교육운영</strong> <span class="ico mail">메일</span><span class="ico sms">SMS</span><span class="ico kakao">카카오톡</span><br/>개찰 전(공고 전), 유찰, 재입찰</td>
+					<td>매주(수)<br/>10:00</td>
+					<td><input type="button" class="share trash" value="삭제" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td><span class="scope service">용역</span> <strong>일자리, 교육운영</strong> <span class="ico mail">메일</span><span class="ico sms">SMS</span><span class="ico kakao">카카오톡</span><br/>개찰 전(공고 전), 유찰, 재입찰</td>
+					<td>매일(월,화,수,목,금,휴일제외)<br/>10:00</td>
+					<td><input type="button" class="share trash" value="삭제" /></td>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td><span class="scope service">용역</span> <strong>일자리, 교육운영</strong> <span class="ico mail">메일</span><span class="ico sms">SMS</span><span class="ico kakao">카카오톡</span><br/>개찰 전(공고 전), 유찰, 재입찰</td>
+					<td>매주(수)<br/>10:00</td>
+					<td><input type="button" class="share trash" value="삭제" /></td>
+				</tr>
+				</tbody>
+			</table>
+			<div class="clearfix">
+				<div class="fleft seltem-act">
+					<button type="button">선택 삭제하기</button>
+				</div>
+				<div class="fright paging">
+					<a href="javascript:void(0)" class="current">1</a>
+					<a href="javascript:void(0)">2</a>
+					<a href="javascript:void(0)">3</a>
+					<a href="javascript:void(0)">4</a>
+					<a href="javascript:void(0)">5</a>
+					<a href="javascript:void(0)">6</a>
+					<a href="javascript:void(0)">7</a>
+					<a href="javascript:void(0)">8</a>
+					<a href="javascript:void(0)">9</a>
+					<a href="javascript:void(0)">10</a>
+					<a href="javascript:void(0)" class="pn">다음</a>
+					<a href="javascript:void(0)" class="pn">마지막</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer" class="container-fluid">
+	&copy;2020 INKIUM Co, LTD. All right reserved.
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.stickyNavbar.min.js"></script>
+<script src="/js/jquery.nice-select.min.js"></script>
+<script src="/js/datepicker.min.js"></script>
+<script src="/js/datepicker.ko.js"></script>
+<script src="/js/icheck.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
